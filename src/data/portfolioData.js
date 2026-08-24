@@ -1,49 +1,50 @@
 export const portfolioData = {
   personal: {
     name: "Ayush Kumar",
-    headline: "Aspiring Software Developer | C++ | JavaScript | Frontend Development | AI Enthusiast",
+    headline: "Aspiring Software Developer | Web Development & AI-Assisted Coding",
     greeting: "Hi, I'm Ayush Kumar 👋",
     mainHeading: "Aspiring Software Developer Building Real-World Digital Solutions",
-    description: "I'm a Computer Science & Engineering student passionate about software development, frontend technologies, artificial intelligence and building practical solutions through technology.",
+    description: "Motivated Computer Science undergraduate with a strong foundation in C and C++ programming, hands-on experience building and deploying websites using AI-assisted tools, and practical exposure to backend integration with Supabase.",
     profileImage: "/assets/ayush-profile.jpg",
+    resumeImage: "/assets/ayush-resume.png",
     github: "https://github.com/ayush77177panjiyar-star",
     linkedin: "https://www.linkedin.com/in/ayush-kumar-paniyar/",
-    email: "ayush.panjiyar.dev@gmail.com",
-    location: "Panipat, Haryana, India"
+    email: "ayush77177panjiyar@gmail.com",
+    phone: "+91 7903382446",
+    location: "Samastipur, Bihar | Geeta University, Panipat"
   },
   
   about: {
     university: "Geeta University, Panipat",
-    degree: "B.Tech – Computer Science & Engineering",
-    bio: "I am a dedicated B.Tech CSE student at Geeta University with a passion for transforming ideas into production-ready software solutions. My core focus spans software engineering, frontend web architecture, artificial intelligence applications, and active participation in competitive hackathons.",
+    degree: "Bachelor of Technology (B.Tech) - Computer Science",
+    bio: "I am a dedicated B.Tech Computer Science student at Geeta University with a passion for transforming ideas into production-ready software solutions. My core focus spans C/C++ programming, modern web development, Supabase backend integration, and leveraging AI-assisted coding tools (ChatGPT, Gemini, Claude, Lovable, Cursor, Antigravity) for rapid prototyping and full-stack software development.",
     interests: [
       "Software Development",
-      "Frontend Development",
-      "Artificial Intelligence",
-      "Web Technologies",
-      "Hackathons & Innovation",
-      "Building Real-World Projects",
+      "AI-Assisted Coding ('Vibe Coding')",
+      "Frontend & Web Architecture",
+      "Supabase Backend & Authentication",
+      "Hackathons (SIH 2025, HackForge 2.0)",
       "Continuous Learning"
     ],
     strengths: [
       {
-        title: "Problem Solving",
-        desc: "Structured algorithmic thinking and efficient debugging in C++ & JavaScript.",
+        title: "Problem Solving & Logic",
+        desc: "Structured algorithmic thinking and efficient logic execution in C, C++, and JavaScript.",
         icon: "Brain"
       },
       {
-        title: "Communication",
-        desc: "Articulate presentation of technical ideas, code architecture, and team pitches.",
-        icon: "MessageSquare"
+        title: "AI-Assisted Development",
+        desc: "Fluent with AI tools (ChatGPT, Gemini, Claude, Lovable, Cursor, Antigravity) to accelerate coding and debugging.",
+        icon: "Cpu"
       },
       {
-        title: "Leadership & Teamwork",
-        desc: "Coordinating hackathon teams (Team 'Hack Titans'), organizing tasks, and fostering seamless collaboration.",
+        title: "Teamwork & Leadership",
+        desc: "Hackathon leadership (Team 'Hack Titans', Team 'Neural Nexus') and collaborative engineering.",
         icon: "Users"
       },
       {
-        title: "Management",
-        desc: "Project timeline planning, git workflow management, and feature execution.",
+        title: "Adaptability & Management",
+        desc: "Quick adaptability to new tools, Supabase database setup, and self-directed project execution.",
         icon: "Target"
       }
     ]
@@ -55,7 +56,7 @@ export const portfolioData = {
       title: "Top 15 — HackForge 2.0 (Team Hack Titans)",
       badge: "Top 15 Teams Awardee",
       organization: "Geeta University & Geeta Technical Hub",
-      description: "Secured a place among the Top 15 Teams out of all participants in the prestigious 'HackForge 2.0' 24-Hour Internal Students Hackathon (14th-15th April 2026) with Team 'Hack Titans'. Received official Certificate of Appreciation.",
+      description: "Secured a place among the Top 15 Teams in the 24-hour internal hackathon (14th-15th April 2026) with Team 'Hack Titans'. Received official Certificate of Appreciation.",
       certificateImage: "/assets/hackforge-certificate.jpg",
       images: [
         { url: "/assets/hackforge-certificate.jpg", caption: "Official Certificate of Appreciation - Top 15 Teams in HackForge 2.0 awarded to Ayush Kumar (Team Hack Titans)." },
@@ -63,7 +64,25 @@ export const portfolioData = {
         { url: "/assets/hackforge-stage.png", caption: "Ayush presenting project analytics on stage during HackForge 2.0 auditorium pitching round." },
         { url: "/assets/team-photo.jpg", caption: "Ayush Kumar and team members during the HackForge 2.0 hackathon event." }
       ],
-      highlights: ["Top 15 Teams Official Certificate", "Team 'Hack Titans' Lead", "Auditorium Stage Presentation", "24-Hour Hackathon Execution"]
+      highlights: ["Top 15 Teams Official Certificate", "Team 'Hack Titans' Lead", "Auditorium Stage Presentation"]
+    },
+    {
+      id: "sih-2025",
+      title: "Internal Smart India Hackathon (SIH 2025)",
+      badge: "Team Neural Nexus",
+      organization: "Geeta University | Ministry of Education & AICTE",
+      description: "Participated in the Internal Smart India Hackathon (SIH 2025) held at Geeta University on 24th September 2025 as part of Team 'Neural Nexus'.",
+      certificateImage: "/assets/sih-2025-certificate.png",
+      highlights: ["SIH 2025 Hackathon", "Team 'Neural Nexus'", "Ministry of Education & AICTE Initiative"]
+    },
+    {
+      id: "code-in-the-dark",
+      title: "Code in the Dark Competition",
+      badge: "Certificate of Appreciation",
+      organization: "School of Computer Science Engineering, Geeta University",
+      description: "Participated in the 'Code in the Dark' live frontend coding competition organized by the School of Computer Science Engineering.",
+      certificateImage: "/assets/code-in-the-dark-certificate.png",
+      highlights: ["Live Frontend Coding", "School of CSE Competition", "Speed & Accuracy Coding"]
     },
     {
       id: "oosc-4",
@@ -74,15 +93,6 @@ export const portfolioData = {
       github: "https://github.com/ayush77177panjiyar-star/Civil_AI",
       liveDemo: "https://civil-ai-rax3.onrender.com/",
       highlights: ["First Elimination Round Project", "Gemini 2.5 AI Integration", "RTI & Statutory Guidance"]
-    },
-    {
-      id: "yugantran-2026",
-      title: "Tech Fest YUGANTRAN 2.0 Participation",
-      badge: "Certificate of Achievement",
-      organization: "Geeta University (School of CSE & Geeta Technical Hub)",
-      description: "Awarded Certificate of Achievement for valuable participation in Tech Fest Yugantran 2.0 organized by School of Computer Science & Engineering.",
-      certificateImage: "/assets/yugantran-certificate.png",
-      highlights: ["Geeta University Tech Fest", "School of CSE Competition", "Technical Innovation Showcase"]
     }
   ],
 
@@ -156,50 +166,68 @@ export const portfolioData = {
 
   internships: [
     {
-      id: "saiket-systems",
-      organization: "Saiket Systems",
-      tagline: "Innovate. Elevate. Excel.",
-      role: "Front-end Development Intern",
-      duration: "14/02/2026 to 14/03/2026",
-      issuedDate: "17/03/2026",
-      internId: "SKS/A2/C101286",
-      accreditation: "ISO 9001:2015 Certified | MSME Registered",
-      description: "Served as Front-end Development Intern. Worked on creative frontend solutions, building user-centric interfaces and responsive web layouts using modern technologies.",
-      skills: ["Front-end Development", "HTML5", "CSS3", "JavaScript", "Communication", "Attention to Detail"],
-      certificateImage: "/assets/saiket-certificate.png",
-      offerLetterImage: "/assets/saiket-offer-letter.png"
-    },
-    {
       id: "talentgro-global",
-      organization: "TalentGro Global",
+      organization: "Talentgro",
       tagline: "Growth Simplified",
-      role: "Web Design and Development Intern",
-      duration: "01 Jun 2026 to 16 Jul 2026",
+      role: "Software Intern",
+      duration: "June 2026 – July 2026",
       certId: "TG2607DC2U5A",
       accreditation: "ISO 9001:2015",
       mentor: "Rishabh Chauhan (IT Specialist)",
       rollNo: "2501301058",
       institution: "Geeta University, Panipat",
-      description: "Successfully carried out internship in Web Design and Development. Designed responsive layouts, implemented dynamic features, and worked on real-world web assignments.",
-      skills: ["Web Design", "Web Development", "UI/UX Layouts", "Responsive Design", "Teamwork"],
+      description: "Recently completed an internship at Talentgro, gaining hands-on industry exposure to real-world development workflows and practical software tasks. Applied technical and AI-assisted development skills in a professional team environment.",
+      skills: ["Web Design & Development", "Software Engineering", "AI-Assisted Workflows", "Responsive UI", "Team Collaboration"],
       certificateImage: "/assets/talentgro-certificate.png"
+    },
+    {
+      id: "saiket-systems",
+      organization: "Saiket Systems",
+      tagline: "Innovate. Elevate. Excel.",
+      role: "Front-end Development Intern",
+      duration: "February 2026 – March 2026",
+      issuedDate: "17/03/2026",
+      internId: "SKS/A2/C101286",
+      accreditation: "ISO 9001:2015 Certified | MSME Registered",
+      description: "Completed an internship at Saiket Systems, contributing to assigned technical tasks and strengthening core programming and development skills. Gained experience working in a structured environment, improving discipline and execution.",
+      skills: ["Front-end Development", "HTML5", "CSS3", "JavaScript", "Communication", "Attention to Detail"],
+      certificateImage: "/assets/saiket-certificate.png",
+      offerLetterImage: "/assets/saiket-offer-letter.png"
     },
     {
       id: "codsoft",
       organization: "CodSoft",
       tagline: "Code. Create. Succeed.",
       role: "C++ Programming Virtual Intern",
-      duration: "01 March 2026 to 31 March 2026",
+      duration: "01 March 2026 – 31 March 2026",
       issuedDate: "27/02/2026",
       internId: "BY25RY271995",
       accreditation: "ISO 9001:2015 Certified | MSME Registered",
-      description: "Selected for 1-Month C++ Programming Virtual Internship. Focused on core C++ algorithm execution, data structures, and practical software assignments.",
+      description: "Selected for 1-Month C++ Programming Virtual Internship position with CodSoft. Executed assigned C++ tasks, data structures, and algorithmic logic.",
       skills: ["C++ Programming", "Data Structures", "Algorithm Logic", "Problem Solving"],
       certificateImage: "/assets/codsoft-offer-letter.png"
     }
   ],
 
   certifications: [
+    {
+      id: "cert-sih-2025",
+      title: "Internal Smart India Hackathon (SIH 2025) Certificate of Participation",
+      organization: "Geeta University | Ministry of Education & AICTE",
+      category: "Hackathon",
+      date: "24th September 2025",
+      credentialId: "Team Neural Nexus - SIH 2025",
+      image: "/assets/sih-2025-certificate.png"
+    },
+    {
+      id: "cert-code-in-dark",
+      title: "Code in the Dark Competition Certificate of Appreciation",
+      organization: "School of Computer Science Engineering, Geeta University",
+      category: "Technical",
+      date: "2026",
+      credentialId: "Code in the Dark Competition",
+      image: "/assets/code-in-the-dark-certificate.png"
+    },
     {
       id: "cert-hackforge-top15",
       title: "HackForge 2.0 Top 15 Certificate of Appreciation",
@@ -219,6 +247,15 @@ export const portfolioData = {
       image: "/assets/hackforge-id-cards.png"
     },
     {
+      id: "cert-talentgro",
+      title: "Web Design and Development Internship Certificate",
+      organization: "Talentgro",
+      category: "Internship",
+      date: "16/07/2026",
+      credentialId: "TG2607DC2U5A",
+      image: "/assets/talentgro-certificate.png"
+    },
+    {
       id: "cert-saiket",
       title: "Front-end Development Internship Certificate",
       organization: "Saiket Systems",
@@ -226,24 +263,6 @@ export const portfolioData = {
       date: "17/03/2026",
       credentialId: "SKS/A2/C101286",
       image: "/assets/saiket-certificate.png"
-    },
-    {
-      id: "cert-saiket-offer",
-      title: "Front-End Development Internship Offer Letter",
-      organization: "Saiket Systems",
-      category: "Internship",
-      date: "14/02/2026",
-      credentialId: "SKS/A2/C101286",
-      image: "/assets/saiket-offer-letter.png"
-    },
-    {
-      id: "cert-talentgro",
-      title: "Web Design and Development Internship Certificate",
-      organization: "TalentGro Global",
-      category: "Internship",
-      date: "16/07/2026",
-      credentialId: "TG2607DC2U5A",
-      image: "/assets/talentgro-certificate.png"
     },
     {
       id: "cert-codsoft-offer",
@@ -262,70 +281,61 @@ export const portfolioData = {
       date: "2026",
       credentialId: "Yugantran 2.0 Participation",
       image: "/assets/yugantran-certificate.png"
-    },
-    {
-      id: "cert-hackforge-pitch",
-      title: "HackForge 2.0 Auditorium Stage Pitching",
-      organization: "Geeta University",
-      category: "Hackathon",
-      date: "2026",
-      credentialId: "Auditorium Stage Presentation",
-      image: "/assets/hackforge-stage.png"
     }
   ],
 
   skills: {
     programming: ["C", "C++"],
-    webDev: ["HTML", "CSS", "JavaScript", "Frontend Development", "Responsive Web Development"],
-    tools: ["Git", "GitHub"],
-    ai: ["Generative AI", "AI Tools", "AI-assisted Development"],
-    soft: ["Communication", "Leadership", "Teamwork", "Management", "Problem Solving", "Presentation", "Collaboration"]
+    webDev: ["Website Development", "Frontend Development", "Responsive Web Development", "AI-assisted ('Vibe Coding')"],
+    backend: ["Supabase (Database, Auth, Connectivity)"],
+    ai: ["ChatGPT", "Gemini", "Claude", "Lovable", "Cursor", "Antigravity"],
+    soft: ["Problem Solving", "Quick Adaptability", "Self-Directed Learning", "Communication", "Leadership", "Teamwork"]
   },
 
   education: {
     institution: "Geeta University, Panipat",
-    degree: "B.Tech – Computer Science & Engineering",
+    degree: "Bachelor of Technology (B.Tech) - Computer Science",
     field: "Computer Science & Engineering",
-    status: "Currently Pursuing",
+    status: "Ongoing",
     location: "Panipat, Haryana, India"
   },
 
   journey: [
     {
       step: 1,
-      title: "B.Tech CSE Admission",
+      title: "B.Tech Computer Science Admission",
       institution: "Geeta University, Panipat",
-      description: "Enrolled in B.Tech Computer Science & Engineering to build a robust foundation in computer science."
+      description: "Enrolled in B.Tech Computer Science to build a strong engineering foundation."
     },
     {
       step: 2,
       title: "Programming Foundations",
       skills: ["C", "C++"],
-      description: "Mastered core programming concepts, data structures, and problem-solving techniques in C and C++."
+      description: "Mastered C and C++ programming fundamentals, logic building, and algorithms."
     },
     {
       step: 3,
-      title: "Frontend Engineering",
-      skills: ["HTML", "CSS", "JavaScript"],
-      description: "Learned modern web technologies, responsive layouts, client-side scripting, and frontend architecture."
+      title: "Modern Web & AI-Assisted Development",
+      skills: ["Frontend", "AI Tools (ChatGPT, Gemini, Claude, Lovable, Cursor, Antigravity)", "Supabase"],
+      description: "Pioneered AI-assisted 'vibe coding' workflows, rapid prototyping, and Supabase backend integration."
     },
     {
       step: 4,
       title: "Real-World Projects",
-      projects: ["Civil AI", "Paper Boat Project", "Visionary Edu Legacy"],
-      description: "Built practical digital solutions, including AI civic platforms and web applications."
+      projects: ["Civil AI Platform", "Paper Boat Project", "Visionary Edu Legacy"],
+      description: "Developed production web applications and statutory AI copilots."
     },
     {
       step: 5,
-      title: "Professional Internships",
-      organizations: ["Saiket Systems", "TalentGro Global", "CodSoft"],
-      description: "Completed industry internships in Front-end Development, Web Design & Development, and C++ Programming."
+      title: "Software Internships",
+      organizations: ["Talentgro", "Saiket Systems", "CodSoft"],
+      description: "Completed software engineering internships gaining hands-on exposure to development workflows."
     },
     {
       step: 6,
-      title: "Hackathons & Achievements",
-      events: ["HackForge 2.0 (Top 15 - Team Hack Titans)", "OOSC 4.0 IIIT Allahabad", "Yugantran 2.0 Tech Fest"],
-      description: "Competed in high-stakes hackathons, pitched on auditorium stages, and earned official certificates of appreciation."
+      title: "Hackathons & Competitions",
+      events: ["HackForge 2.0 (Top 15 - Team Hack Titans)", "Internal SIH 2025 (Team Neural Nexus)", "Code in the Dark"],
+      description: "Competed in SIH 2025, HackForge 2.0, and live coding challenges."
     }
   ]
 };

@@ -1,8 +1,38 @@
 import React from 'react';
-import { Trophy, Award, Briefcase, Rocket, Eye, Sparkles } from 'lucide-react';
+import { Trophy, Award, Briefcase, Rocket, Eye, Sparkles, FileText } from 'lucide-react';
 
 export default function AchievementWall({ isDark, openModal }) {
   const wallItems = [
+    {
+      id: 'wall-resume',
+      title: 'Ayush Kumar — Official Resume Document',
+      type: '📄 Official Resume',
+      category: 'Resume & Credentials',
+      organization: 'B.Tech Computer Science',
+      image: '/assets/ayush-resume.png',
+      caption: 'Official Resume of Ayush Kumar covering technical skills, C/C++, AI-assisted web development, internships, and projects.',
+      size: 'large'
+    },
+    {
+      id: 'wall-sih-2025',
+      title: 'Internal Smart India Hackathon (SIH 2025)',
+      type: '🚀 Hackathon',
+      category: 'Team Neural Nexus',
+      organization: 'Geeta University & MoE / AICTE',
+      image: '/assets/sih-2025-certificate.png',
+      caption: 'Certificate of Participation in SIH 2025 for Team Neural Nexus (24th Sept 2025).',
+      size: 'medium'
+    },
+    {
+      id: 'wall-code-in-dark',
+      title: 'Code in the Dark Competition Certificate',
+      type: '🏆 Achievement',
+      category: 'Live Coding Competition',
+      organization: 'School of Computer Science Engineering',
+      image: '/assets/code-in-the-dark-certificate.png',
+      caption: 'Certificate of Appreciation for participation in Code in the Dark frontend challenge.',
+      size: 'medium'
+    },
     {
       id: 'wall-1',
       title: 'HackForge 2.0 Official Top 15 Certificate of Appreciation',
@@ -52,26 +82,6 @@ export default function AchievementWall({ isDark, openModal }) {
       image: '/assets/talentgro-certificate.png',
       caption: 'Official Web Design & Development Internship Certificate.',
       size: 'medium'
-    },
-    {
-      id: 'wall-6',
-      title: 'Tech Fest YUGANTRAN 2.0 Certificate of Participation',
-      type: '📜 Certificate',
-      category: 'Tech Fest',
-      organization: 'Geeta University School of CSE',
-      image: '/assets/yugantran-certificate.png',
-      caption: 'Certificate of Achievement for participation in Tech Fest Yugantran 2.0.',
-      size: 'medium'
-    },
-    {
-      id: 'wall-7',
-      title: 'HackForge 2.0 Stage Presentation & Pitch',
-      type: '🏆 Achievement',
-      category: 'Auditorium Pitching',
-      organization: 'Geeta University',
-      image: '/assets/hackforge-stage.png',
-      caption: 'Ayush presenting project analytics on auditorium stage during HackForge 2.0 finals.',
-      size: 'large'
     }
   ];
 
@@ -89,7 +99,7 @@ export default function AchievementWall({ isDark, openModal }) {
             Verified Digital Wall of Honor
           </h2>
           <p className={`text-base ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-            A comprehensive visual showcase highlighting hackathon stage pitching, team collaboration, and verified internship credentials.
+            A comprehensive visual showcase highlighting hackathon stage pitching, team collaboration, official resume, and verified internship credentials.
           </p>
         </div>
 
