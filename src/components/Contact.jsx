@@ -63,22 +63,37 @@ export default function Contact({ isDark }) {
     setLoading(true);
 
     try {
-      // Submit to Supabase hire_requests table
-      const { data, error } = await supabase
+      const payload = [
+        {
+          name: formData.name.trim(),
+          email: formData.email.trim(),
+          subject: formData.subject?.trim() || null,
+          message: formData.message.trim()
+        }
+      ];
+
+      // Step 1: Try insert with .select()
+      let { data, error } = await supabase
         .from('hire_requests')
-        .insert([
-          {
-            name: formData.name.trim(),
-            email: formData.email.trim(),
-            subject: formData.subject?.trim() || null,
-            message: formData.message.trim()
-          }
-        ])
-        .select()
-        .single();
+        .insert(payload)
+        .select();
+
+      // If error occurs (e.g. 401 or 42501 due to RLS SELECT policies blocking read access), fallback to insert without .select()
+      if (error && (error.code === '42501' || error.status === 401 || error.message?.includes('401'))) {
+        console.warn('Retrying insert without .select() in case RLS blocks SELECT query...');
+        const retryResult = await supabase
+          .from('hire_requests')
+          .insert(payload);
+        error = retryResult.error;
+      }
 
       if (error) {
-        console.error('Supabase hire_requests submission error:', error);
+        console.error('Supabase hire_requests submission error details:', {
+          message: error.message,
+          code: error.code,
+          details: error.details,
+          hint: error.hint
+        });
         setSubmitError("Something went wrong while sending your message. Please try again.");
       } else {
         setSubmitted(true);
