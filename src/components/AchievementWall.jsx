@@ -1,5 +1,5 @@
 import React from 'react';
-import { Trophy, Award, Briefcase, Rocket, Eye, Sparkles, FileText } from 'lucide-react';
+import { Eye, Sparkles } from 'lucide-react';
 
 export default function AchievementWall({ isDark, openModal }) {
   const wallItems = [
@@ -85,6 +85,8 @@ export default function AchievementWall({ isDark, openModal }) {
     }
   ];
 
+  const safeWallItems = Array.isArray(wallItems) ? wallItems : [];
+
   return (
     <section className="py-24 relative overflow-hidden bg-gray-950/60 border-y border-gray-800/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -105,12 +107,12 @@ export default function AchievementWall({ isDark, openModal }) {
 
         {/* Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6">
-          {wallItems.map((item) => {
+          {safeWallItems.map((item) => {
             const isLarge = item.size === 'large';
             return (
               <div
                 key={item.id}
-                onClick={() => openModal(item.image, item.title)}
+                onClick={() => openModal && openModal(item.image, item.title)}
                 className={`group relative rounded-3xl overflow-hidden bg-gray-950 border border-gray-800 cursor-pointer shadow-xl transition-all duration-300 hover:-translate-y-1.5 hover:border-indigo-500/50 ${
                   isLarge ? 'lg:col-span-7' : 'lg:col-span-5'
                 }`}
@@ -119,7 +121,7 @@ export default function AchievementWall({ isDark, openModal }) {
                 <div className="relative aspect-[16/10] w-full overflow-hidden">
                   <img
                     src={item.image}
-                    alt={item.title}
+                    alt={item.title ?? 'Achievement'}
                     className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/40 to-transparent opacity-90 group-hover:opacity-95 transition-opacity" />
@@ -127,10 +129,10 @@ export default function AchievementWall({ isDark, openModal }) {
                   {/* Badges */}
                   <div className="absolute top-4 left-4 flex flex-wrap gap-2">
                     <span className="px-3 py-1 rounded-full bg-indigo-600/90 text-white text-[11px] font-bold font-mono uppercase tracking-wider backdrop-blur-md">
-                      {item.type}
+                      {item.type ?? 'Achievement'}
                     </span>
                     <span className="px-3 py-1 rounded-full bg-gray-900/80 border border-gray-700 text-gray-300 text-[11px] font-mono backdrop-blur-md">
-                      {item.organization}
+                      {item.organization ?? ''}
                     </span>
                   </div>
 
@@ -145,10 +147,10 @@ export default function AchievementWall({ isDark, openModal }) {
                   {/* Caption & Title */}
                   <div className="absolute bottom-4 left-4 right-4 space-y-1">
                     <h3 className="text-white font-bold text-lg leading-snug drop-shadow-md">
-                      {item.title}
+                      {item.title ?? ''}
                     </h3>
                     <p className="text-xs text-gray-300 line-clamp-2">
-                      {item.caption}
+                      {item.caption ?? ''}
                     </p>
                   </div>
 

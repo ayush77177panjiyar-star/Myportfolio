@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -24,6 +24,8 @@ export default function App() {
     customItem: null
   });
 
+  const certifications = Array.isArray(portfolioData?.certifications) ? portfolioData.certifications : [];
+
   const toggleTheme = () => {
     setIsDark(prev => !prev);
     if (!isDark) {
@@ -42,11 +44,13 @@ export default function App() {
   };
 
   const openModalWithIndex = (index) => {
-    setModalState({
-      isOpen: true,
-      currentIndex: index,
-      customItem: null
-    });
+    if (index >= 0 && index < certifications.length) {
+      setModalState({
+        isOpen: true,
+        currentIndex: index,
+        customItem: null
+      });
+    }
   };
 
   const closeModal = () => {
@@ -54,7 +58,7 @@ export default function App() {
   };
 
   const handleNextCert = () => {
-    if (modalState.currentIndex >= 0 && modalState.currentIndex < portfolioData.certifications.length - 1) {
+    if (modalState.currentIndex >= 0 && modalState.currentIndex < certifications.length - 1) {
       setModalState(prev => ({ ...prev, currentIndex: prev.currentIndex + 1 }));
     }
   };
@@ -67,7 +71,7 @@ export default function App() {
 
   const currentModalItem = modalState.customItem 
     ? modalState.customItem 
-    : portfolioData.certifications[modalState.currentIndex] || null;
+    : (certifications[modalState.currentIndex] ?? null);
 
   return (
     <div className={`min-h-screen ${isDark ? 'bg-[#090D16] text-slate-100' : 'bg-slate-50 text-slate-900'} font-['Plus_Jakarta_Sans',sans-serif]`}>
@@ -119,7 +123,7 @@ export default function App() {
         isOpen={modalState.isOpen}
         onClose={closeModal}
         currentItem={currentModalItem}
-        onNext={modalState.currentIndex >= 0 && modalState.currentIndex < portfolioData.certifications.length - 1 ? handleNextCert : null}
+        onNext={modalState.currentIndex >= 0 && modalState.currentIndex < certifications.length - 1 ? handleNextCert : null}
         onPrev={modalState.currentIndex > 0 ? handlePrevCert : null}
       />
 

@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import { Award, ShieldCheck, Eye, Calendar, Tag } from 'lucide-react';
+import { Award, Eye, Calendar } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
 const categories = ['All', 'Internship', 'Technical', 'AI', 'Hackathon', 'Other'];
 
 export default function Certificates({ isDark, openModalWithIndex }) {
-  const { certifications } = portfolioData;
+  const certifications = Array.isArray(portfolioData?.certifications) ? portfolioData.certifications : [];
   const [activeCategory, setActiveCategory] = useState('All');
 
   const filteredCerts = activeCategory === 'All'
     ? certifications
-    : certifications.filter(c => c.category === activeCategory);
+    : certifications.filter(c => c?.category === activeCategory);
 
   return (
     <section id="certifications" className="py-24 relative overflow-hidden bg-gray-950/30">
@@ -61,7 +61,7 @@ export default function Certificates({ isDark, openModalWithIndex }) {
             {filteredCerts.map((cert) => (
               <div
                 key={cert.id}
-                onClick={() => openModalWithIndex(certifications.findIndex(c => c.id === cert.id))}
+                onClick={() => openModalWithIndex && openModalWithIndex(certifications.findIndex(c => c.id === cert.id))}
                 className={`group rounded-3xl border overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-1.5 ${
                   isDark 
                     ? 'bg-gray-900/80 border-gray-800 hover:border-indigo-500/50 shadow-xl' 
@@ -72,14 +72,14 @@ export default function Certificates({ isDark, openModalWithIndex }) {
                 <div className="relative aspect-[4/3] bg-gray-950 overflow-hidden border-b border-gray-800">
                   <img
                     src={cert.image}
-                    alt={cert.title}
+                    alt={cert.title ?? 'Certificate'}
                     className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-950/90 via-gray-950/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity" />
                   
                   <div className="absolute top-3 left-3">
                     <span className="px-3 py-1 rounded-full bg-indigo-600/90 text-white text-[10px] font-mono font-bold uppercase tracking-wider backdrop-blur-md">
-                      {cert.category}
+                      {cert.category ?? 'Credential'}
                     </span>
                   </div>
 
@@ -94,14 +94,14 @@ export default function Certificates({ isDark, openModalWithIndex }) {
                 {/* Card Meta Content */}
                 <div className="p-6 space-y-3">
                   <h3 className="font-bold text-lg leading-snug group-hover:text-indigo-400 transition-colors">
-                    {cert.title}
+                    {cert.title ?? ''}
                   </h3>
 
                   <div className="flex items-center justify-between text-xs text-gray-400 pt-2 border-t border-gray-800/60 font-mono">
-                    <span className="font-semibold text-gray-300">{cert.organization}</span>
+                    <span className="font-semibold text-gray-300">{cert.organization ?? ''}</span>
                     <span className="flex items-center gap-1">
                       <Calendar className="w-3 h-3 text-indigo-400" />
-                      {cert.date}
+                      {cert.date ?? ''}
                     </span>
                   </div>
 

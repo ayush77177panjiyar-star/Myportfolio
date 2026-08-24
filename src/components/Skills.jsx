@@ -1,9 +1,9 @@
 import React from 'react';
-import { Code2, Globe, Wrench, Cpu, Users, ShieldCheck, Sparkles } from 'lucide-react';
+import { Code2, Globe, Wrench, Cpu, Users, ShieldCheck } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
 export default function Skills({ isDark }) {
-  const { skills } = portfolioData;
+  const skills = portfolioData?.skills ?? {};
 
   const skillGroups = [
     {
@@ -12,7 +12,7 @@ export default function Skills({ isDark }) {
       color: "from-blue-500/20 to-indigo-500/20",
       borderColor: "border-blue-500/30",
       textColor: "text-blue-400",
-      items: skills.programming
+      items: Array.isArray(skills.programming) ? skills.programming : []
     },
     {
       title: "Web Development",
@@ -20,7 +20,7 @@ export default function Skills({ isDark }) {
       color: "from-indigo-500/20 to-cyan-500/20",
       borderColor: "border-indigo-500/30",
       textColor: "text-indigo-400",
-      items: skills.webDev
+      items: Array.isArray(skills.webDev) ? skills.webDev : []
     },
     {
       title: "Tools & Version Control",
@@ -28,15 +28,15 @@ export default function Skills({ isDark }) {
       color: "from-amber-500/20 to-orange-500/20",
       borderColor: "border-amber-500/30",
       textColor: "text-amber-400",
-      items: skills.tools
+      items: Array.isArray(skills.tools) ? skills.tools : []
     },
     {
-      title: "AI & Modern Tech",
+      title: "AI Tools & Modern Tech",
       icon: Cpu,
       color: "from-emerald-500/20 to-teal-500/20",
       borderColor: "border-emerald-500/30",
       textColor: "text-emerald-400",
-      items: skills.ai
+      items: Array.isArray(skills.ai) ? skills.ai : []
     },
     {
       title: "Soft & Leadership Skills",
@@ -44,7 +44,7 @@ export default function Skills({ isDark }) {
       color: "from-purple-500/20 to-pink-500/20",
       borderColor: "border-purple-500/30",
       textColor: "text-purple-400",
-      items: skills.soft
+      items: Array.isArray(skills.soft) ? skills.soft : []
     }
   ];
 
@@ -70,6 +70,8 @@ export default function Skills({ isDark }) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillGroups.map((group, idx) => {
             const IconComp = group.icon;
+            const items = Array.isArray(group.items) ? group.items : [];
+
             return (
               <div
                 key={idx}
@@ -87,7 +89,7 @@ export default function Skills({ isDark }) {
                 </div>
 
                 <div className="flex flex-wrap gap-2.5">
-                  {group.items.map((item, i) => (
+                  {items.map((item, i) => (
                     <span
                       key={i}
                       className={`px-3.5 py-2 rounded-xl text-xs font-medium border transition-all duration-200 hover:scale-105 ${

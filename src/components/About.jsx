@@ -6,11 +6,14 @@ const iconMap = {
   Brain: Brain,
   MessageSquare: MessageSquare,
   Users: Users,
-  Target: Target
+  Target: Target,
+  Cpu: Sparkles
 };
 
 export default function About({ isDark }) {
-  const { about } = portfolioData;
+  const about = portfolioData?.about ?? {};
+  const interests = Array.isArray(about.interests) ? about.interests : [];
+  const strengths = Array.isArray(about.strengths) ? about.strengths : [];
 
   return (
     <section id="about" className="py-24 relative overflow-hidden">
@@ -45,19 +48,19 @@ export default function About({ isDark }) {
                   <BookOpen className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-xl">{about.degree}</h3>
-                  <p className="text-xs text-indigo-400 font-mono">{about.university}</p>
+                  <h3 className="font-bold text-xl">{about.degree ?? 'B.Tech - Computer Science'}</h3>
+                  <p className="text-xs text-indigo-400 font-mono">{about.university ?? 'Geeta University, Panipat'}</p>
                 </div>
               </div>
 
               <p className={`leading-relaxed text-base ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
-                {about.bio}
+                {about.bio ?? ''}
               </p>
 
               <div className="space-y-3">
                 <h4 className="text-xs uppercase tracking-wider text-gray-400 font-bold">Key Technical Focus Areas</h4>
                 <div className="flex flex-wrap gap-2">
-                  {about.interests.map((interest, idx) => (
+                  {interests.map((interest, idx) => (
                     <span
                       key={idx}
                       className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-medium border ${
@@ -79,7 +82,7 @@ export default function About({ isDark }) {
                 <span className="w-2 h-2 rounded-full bg-emerald-400" />
                 Active B.Tech CSE Undergraduate
               </span>
-              <span className="font-mono">Geeta University</span>
+              <span className="font-mono">{about.university ?? 'Geeta University'}</span>
             </div>
           </div>
 
@@ -99,17 +102,17 @@ export default function About({ isDark }) {
             </h3>
 
             <p className={`text-sm leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-              Rather than accumulating arbitrary stats, I focus on constructing reliable, well-tested applications, participating in high-stakes hackathons like OOSC 4.0 IIIT Allahabad and HackForge 2.0, and solving real civic problems.
+              Rather than accumulating arbitrary stats, I focus on constructing reliable, well-tested applications, participating in high-stakes hackathons like OOSC 4.0 IIIT Allahabad, SIH 2025, and HackForge 2.0, and solving real civic problems.
             </p>
 
             <div className="grid grid-cols-2 gap-4 pt-2">
               <div className="p-4 rounded-2xl bg-gray-800/50 border border-gray-700/60 text-center">
                 <span className="block font-bold text-lg text-indigo-400">Software Dev</span>
-                <span className="text-[11px] text-gray-400">C++ & Frontend</span>
+                <span className="text-[11px] text-gray-400">C++ & Modern Web</span>
               </div>
               <div className="p-4 rounded-2xl bg-gray-800/50 border border-gray-700/60 text-center">
-                <span className="block font-bold text-lg text-cyan-400">Generative AI</span>
-                <span className="text-[11px] text-gray-400">Statutory Copilots</span>
+                <span className="block font-bold text-lg text-cyan-400">AI-Assisted</span>
+                <span className="text-[11px] text-gray-400">Vibe Coding & Tools</span>
               </div>
             </div>
           </div>
@@ -123,7 +126,7 @@ export default function About({ isDark }) {
           </h3>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {about.strengths.map((item, idx) => {
+            {strengths.map((item, idx) => {
               const IconComp = iconMap[item.icon] || Code2;
               return (
                 <div

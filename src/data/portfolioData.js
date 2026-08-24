@@ -73,6 +73,7 @@ export const portfolioData = {
       organization: "Geeta University | Ministry of Education & AICTE",
       description: "Participated in the Internal Smart India Hackathon (SIH 2025) held at Geeta University on 24th September 2025 as part of Team 'Neural Nexus'.",
       certificateImage: "/assets/sih-2025-certificate.png",
+      images: [],
       highlights: ["SIH 2025 Hackathon", "Team 'Neural Nexus'", "Ministry of Education & AICTE Initiative"]
     },
     {
@@ -82,6 +83,7 @@ export const portfolioData = {
       organization: "School of Computer Science Engineering, Geeta University",
       description: "Participated in the 'Code in the Dark' live frontend coding competition organized by the School of Computer Science Engineering.",
       certificateImage: "/assets/code-in-the-dark-certificate.png",
+      images: [],
       highlights: ["Live Frontend Coding", "School of CSE Competition", "Speed & Accuracy Coding"]
     },
     {
@@ -92,6 +94,7 @@ export const portfolioData = {
       description: "Developed Civil AI, an AI-powered statutory legal and civic co-pilot for Indian citizens, built specifically for the first elimination round of OOSC 4.0 conducted by IIIT Allahabad.",
       github: "https://github.com/ayush77177panjiyar-star/Civil_AI",
       liveDemo: "https://civil-ai-rax3.onrender.com/",
+      images: [],
       highlights: ["First Elimination Round Project", "Gemini 2.5 AI Integration", "RTI & Statutory Guidance"]
     }
   ],
@@ -132,11 +135,6 @@ export const portfolioData = {
         desc: "Real-time streaming civic advice using Gemini 2.5 Flash API endpoint with strict statutory grounding."
       }
     ],
-    legalGuiderNote: {
-      title: "Legal Guider Ecosystem Component",
-      repo: "https://github.com/ayush77177panjiyar-star/Legal_guider",
-      description: "Legal Guider represents the underlying full-stack React + TypeScript + Express repository and architectural backend foundation for the Civil AI civic platform."
-    },
     techStack: ["React 18", "TypeScript", "Vite", "Tailwind CSS", "Node.js", "Express", "Google Gemini 2.5 Flash API", "Render", "Supabase", "jsPDF"],
     contribution: "Designed and implemented the responsive frontend UI components, AI query prompts, statutory response structures, and backend API routes."
   },
