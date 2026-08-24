@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Sun, Moon, Code2, Award, Briefcase, GraduationCap, FolderGit2, Mail, User, ShieldCheck } from 'lucide-react';
+import { Menu, X, Sun, Moon, Code2, Award, Briefcase, GraduationCap, FolderGit2, Mail, User, ShieldCheck, FileText } from 'lucide-react';
 
 const navItems = [
   { name: 'Home', href: '#home', icon: Code2 },
@@ -10,6 +10,7 @@ const navItems = [
   { name: 'Achievements', href: '#achievements', icon: Award },
   { name: 'Certifications', href: '#certifications', icon: Award },
   { name: 'Education', href: '#education', icon: GraduationCap },
+  { name: 'Resume', href: '#resume', icon: FileText },
   { name: 'Contact', href: '#contact', icon: Mail },
 ];
 
