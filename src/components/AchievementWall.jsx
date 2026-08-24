@@ -9,7 +9,7 @@ export default function AchievementWall({ isDark, openModal }) {
       type: '📄 Official Resume',
       category: 'Resume & Credentials',
       organization: 'B.Tech Computer Science',
-      image: 'assets/ayush-resume.png',
+      image: '/assets/ayush-resume.png',
       caption: 'Official Resume of Ayush Kumar covering technical skills, C/C++, AI-assisted web development, internships, and projects.',
       size: 'large'
     },
@@ -19,7 +19,7 @@ export default function AchievementWall({ isDark, openModal }) {
       type: '🚀 Hackathon',
       category: 'Team Neural Nexus',
       organization: 'Geeta University & MoE / AICTE',
-      image: 'assets/sih-2025-certificate.png',
+      image: '/assets/sih-2025-certificate.png',
       caption: 'Certificate of Participation in SIH 2025 for Team Neural Nexus (24th Sept 2025).',
       size: 'medium'
     },
@@ -29,7 +29,7 @@ export default function AchievementWall({ isDark, openModal }) {
       type: '🏆 Achievement',
       category: 'Live Coding Competition',
       organization: 'School of Computer Science Engineering',
-      image: 'assets/code-in-the-dark-certificate.png',
+      image: '/assets/code-in-the-dark-certificate.png',
       caption: 'Certificate of Appreciation for participation in Code in the Dark frontend challenge.',
       size: 'medium'
     },
@@ -39,7 +39,7 @@ export default function AchievementWall({ isDark, openModal }) {
       type: '🏆 Achievement',
       category: 'Hackathon Award',
       organization: 'Geeta University (Team Hack Titans)',
-      image: 'assets/hackforge-certificate.jpg',
+      image: '/assets/hackforge-certificate.jpg',
       caption: 'Awarded to Ayush Kumar from Team Hack Titans for securing Top 15 in HackForge 2.0 (14-15 April 2026).',
       size: 'large'
     },
@@ -49,7 +49,7 @@ export default function AchievementWall({ isDark, openModal }) {
       type: '🚀 Hackathon',
       category: 'Participant Credentials',
       organization: 'Geeta University',
-      image: 'assets/hackforge-id-cards.png',
+      image: '/assets/hackforge-id-cards.png',
       caption: 'Official participant badges for Team Hack Titans (Ayush, Abhay, Aaditya, Krishna).',
       size: 'medium'
     },
@@ -59,7 +59,7 @@ export default function AchievementWall({ isDark, openModal }) {
       type: '💼 Internship',
       category: 'C++ Virtual Internship',
       organization: 'CodSoft (ID: BY25RY271995)',
-      image: 'assets/codsoft-offer-letter.png',
+      image: '/assets/codsoft-offer-letter.png',
       caption: '1-Month C++ Programming Virtual Internship Offer Letter from CodSoft.',
       size: 'medium'
     },
@@ -69,7 +69,7 @@ export default function AchievementWall({ isDark, openModal }) {
       type: '💼 Internship',
       category: 'Front-end Development',
       organization: 'Saiket Systems (SKS/A2/C101286)',
-      image: 'assets/saiket-certificate.png',
+      image: '/assets/saiket-certificate.png',
       caption: 'Official Internship Completion Certificate from Saiket Systems.',
       size: 'medium'
     },
@@ -79,7 +79,7 @@ export default function AchievementWall({ isDark, openModal }) {
       type: '💼 Internship',
       category: 'Web Design & Development',
       organization: 'TalentGro Global (TG2607DC2U5A)',
-      image: 'assets/talentgro-certificate.png',
+      image: '/assets/talentgro-certificate.png',
       caption: 'Official Web Design & Development Internship Certificate.',
       size: 'medium'
     }

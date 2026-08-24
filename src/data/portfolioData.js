@@ -5,8 +5,8 @@ export const portfolioData = {
     greeting: "Hi, I'm Ayush Kumar 👋",
     mainHeading: "Aspiring Software Developer Building Real-World Digital Solutions",
     description: "Motivated Computer Science undergraduate with a strong foundation in C and C++ programming, hands-on experience building and deploying websites using AI-assisted tools, and practical exposure to backend integration with Supabase.",
-    profileImage: "assets/ayush-profile.jpg",
-    resumeImage: "assets/ayush-resume.png",
+    profileImage: "/assets/ayush-profile.jpg",
+    resumeImage: "/assets/ayush-resume.png",
     github: "https://github.com/ayush77177panjiyar-star",
     linkedin: "https://www.linkedin.com/in/ayush-kumar-paniyar/",
     email: "ayush77177panjiyar@gmail.com",
@@ -57,12 +57,12 @@ export const portfolioData = {
       badge: "Top 15 Teams Awardee",
       organization: "Geeta University & Geeta Technical Hub",
       description: "Secured a place among the Top 15 Teams in the 24-hour internal hackathon (14th-15th April 2026) with Team 'Hack Titans'. Received official Certificate of Appreciation.",
-      certificateImage: "assets/hackforge-certificate.jpg",
+      certificateImage: "/assets/hackforge-certificate.jpg",
       images: [
-        { url: "assets/hackforge-certificate.jpg", caption: "Official Certificate of Appreciation - Top 15 Teams in HackForge 2.0 awarded to Ayush Kumar (Team Hack Titans)." },
-        { url: "assets/hackforge-id-cards.png", caption: "Official HackForge 2.0 Participant ID Cards for Team 'Hack Titans' (Ayush, Abhay, Aaditya, Krishna)." },
-        { url: "assets/hackforge-stage.png", caption: "Ayush presenting project analytics on stage during HackForge 2.0 auditorium pitching round." },
-        { url: "assets/team-photo.jpg", caption: "Ayush Kumar and team members during the HackForge 2.0 hackathon event." }
+        { url: "/assets/hackforge-certificate.jpg", caption: "Official Certificate of Appreciation - Top 15 Teams in HackForge 2.0 awarded to Ayush Kumar (Team Hack Titans)." },
+        { url: "/assets/hackforge-id-cards.png", caption: "Official HackForge 2.0 Participant ID Cards for Team 'Hack Titans' (Ayush, Abhay, Aaditya, Krishna)." },
+        { url: "/assets/hackforge-stage.png", caption: "Ayush presenting project analytics on stage during HackForge 2.0 auditorium pitching round." },
+        { url: "/assets/team-photo.jpg", caption: "Ayush Kumar and team members during the HackForge 2.0 hackathon event." }
       ],
       highlights: ["Top 15 Teams Official Certificate", "Team 'Hack Titans' Lead", "Auditorium Stage Presentation"]
     },
@@ -72,7 +72,7 @@ export const portfolioData = {
       badge: "Team Neural Nexus",
       organization: "Geeta University | Ministry of Education & AICTE",
       description: "Participated in the Internal Smart India Hackathon (SIH 2025) held at Geeta University on 24th September 2025 as part of Team 'Neural Nexus'.",
-      certificateImage: "assets/sih-2025-certificate.png",
+      certificateImage: "/assets/sih-2025-certificate.png",
       highlights: ["SIH 2025 Hackathon", "Team 'Neural Nexus'", "Ministry of Education & AICTE Initiative"]
     },
     {
@@ -81,7 +81,7 @@ export const portfolioData = {
       badge: "Certificate of Appreciation",
       organization: "School of Computer Science Engineering, Geeta University",
       description: "Participated in the 'Code in the Dark' live frontend coding competition organized by the School of Computer Science Engineering.",
-      certificateImage: "assets/code-in-the-dark-certificate.png",
+      certificateImage: "/assets/code-in-the-dark-certificate.png",
       highlights: ["Live Frontend Coding", "School of CSE Competition", "Speed & Accuracy Coding"]
     },
     {
@@ -178,7 +178,7 @@ export const portfolioData = {
       institution: "Geeta University, Panipat",
       description: "Recently completed an internship at Talentgro, gaining hands-on industry exposure to real-world development workflows and practical software tasks. Applied technical and AI-assisted development skills in a professional team environment.",
       skills: ["Web Design & Development", "Software Engineering", "AI-Assisted Workflows", "Responsive UI", "Team Collaboration"],
-      certificateImage: "assets/talentgro-certificate.png"
+      certificateImage: "/assets/talentgro-certificate.png"
     },
     {
       id: "saiket-systems",
@@ -191,8 +191,8 @@ export const portfolioData = {
       accreditation: "ISO 9001:2015 Certified | MSME Registered",
       description: "Completed an internship at Saiket Systems, contributing to assigned technical tasks and strengthening core programming and development skills. Gained experience working in a structured environment, improving discipline and execution.",
       skills: ["Front-end Development", "HTML5", "CSS3", "JavaScript", "Communication", "Attention to Detail"],
-      certificateImage: "assets/saiket-certificate.png",
-      offerLetterImage: "assets/saiket-offer-letter.png"
+      certificateImage: "/assets/saiket-certificate.png",
+      offerLetterImage: "/assets/saiket-offer-letter.png"
     },
     {
       id: "codsoft",
@@ -205,7 +205,7 @@ export const portfolioData = {
       accreditation: "ISO 9001:2015 Certified | MSME Registered",
       description: "Selected for 1-Month C++ Programming Virtual Internship position with CodSoft. Executed assigned C++ tasks, data structures, and algorithmic logic.",
       skills: ["C++ Programming", "Data Structures", "Algorithm Logic", "Problem Solving"],
-      certificateImage: "assets/codsoft-offer-letter.png"
+      certificateImage: "/assets/codsoft-offer-letter.png"
     }
   ],
 
@@ -217,7 +217,7 @@ export const portfolioData = {
       category: "Hackathon",
       date: "24th September 2025",
       credentialId: "Team Neural Nexus - SIH 2025",
-      image: "assets/sih-2025-certificate.png"
+      image: "/assets/sih-2025-certificate.png"
     },
     {
       id: "cert-code-in-dark",
@@ -226,7 +226,7 @@ export const portfolioData = {
       category: "Technical",
       date: "2026",
       credentialId: "Code in the Dark Competition",
-      image: "assets/code-in-the-dark-certificate.png"
+      image: "/assets/code-in-the-dark-certificate.png"
     },
     {
       id: "cert-hackforge-top15",
@@ -235,7 +235,7 @@ export const portfolioData = {
       category: "Hackathon",
       date: "14-15 April 2026",
       credentialId: "Top 15 Teams - Team Hack Titans",
-      image: "assets/hackforge-certificate.jpg"
+      image: "/assets/hackforge-certificate.jpg"
     },
     {
       id: "cert-hackforge-cards",
@@ -244,7 +244,7 @@ export const portfolioData = {
       category: "Hackathon",
       date: "14-15 April 2026",
       credentialId: "Team Hack Titans ID Cards",
-      image: "assets/hackforge-id-cards.png"
+      image: "/assets/hackforge-id-cards.png"
     },
     {
       id: "cert-talentgro",
@@ -253,7 +253,7 @@ export const portfolioData = {
       category: "Internship",
       date: "16/07/2026",
       credentialId: "TG2607DC2U5A",
-      image: "assets/talentgro-certificate.png"
+      image: "/assets/talentgro-certificate.png"
     },
     {
       id: "cert-saiket",
@@ -262,7 +262,7 @@ export const portfolioData = {
       category: "Internship",
       date: "17/03/2026",
       credentialId: "SKS/A2/C101286",
-      image: "assets/saiket-certificate.png"
+      image: "/assets/saiket-certificate.png"
     },
     {
       id: "cert-codsoft-offer",
@@ -271,7 +271,7 @@ export const portfolioData = {
       category: "Internship",
       date: "27/02/2026",
       credentialId: "BY25RY271995",
-      image: "assets/codsoft-offer-letter.png"
+      image: "/assets/codsoft-offer-letter.png"
     },
     {
       id: "cert-yugantran",
@@ -280,7 +280,7 @@ export const portfolioData = {
       category: "Technical",
       date: "2026",
       credentialId: "Yugantran 2.0 Participation",
-      image: "assets/yugantran-certificate.png"
+      image: "/assets/yugantran-certificate.png"
     }
   ],
 
