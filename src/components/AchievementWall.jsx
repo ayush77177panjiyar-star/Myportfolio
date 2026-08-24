@@ -5,16 +5,36 @@ export default function AchievementWall({ isDark, openModal }) {
   const wallItems = [
     {
       id: 'wall-1',
-      title: 'Top 15 — HackForge 2.0 Stage Presentation',
+      title: 'HackForge 2.0 Official Top 15 Certificate of Appreciation',
       type: '🏆 Achievement',
-      category: 'Hackathon Stage Pitch',
-      organization: 'Geeta University',
-      image: '/assets/hackforge-stage.png',
-      caption: 'Ayush presenting project analytics on auditorium stage during HackForge 2.0 finals.',
+      category: 'Hackathon Award',
+      organization: 'Geeta University (Team Hack Titans)',
+      image: '/assets/hackforge-certificate.jpg',
+      caption: 'Awarded to Ayush Kumar from Team Hack Titans for securing Top 15 in HackForge 2.0 (14-15 April 2026).',
       size: 'large'
     },
     {
       id: 'wall-2',
+      title: 'HackForge 2.0 Team "Hack Titans" Participant ID Cards',
+      type: '🚀 Hackathon',
+      category: 'Participant Credentials',
+      organization: 'Geeta University',
+      image: '/assets/hackforge-id-cards.png',
+      caption: 'Official participant badges for Team Hack Titans (Ayush, Abhay, Aaditya, Krishna).',
+      size: 'medium'
+    },
+    {
+      id: 'wall-3',
+      title: 'CodSoft C++ Programming Internship Offer Letter',
+      type: '💼 Internship',
+      category: 'C++ Virtual Internship',
+      organization: 'CodSoft (ID: BY25RY271995)',
+      image: '/assets/codsoft-offer-letter.png',
+      caption: '1-Month C++ Programming Virtual Internship Offer Letter from CodSoft.',
+      size: 'medium'
+    },
+    {
+      id: 'wall-4',
       title: 'Saiket Systems Front-end Internship Certificate',
       type: '💼 Internship',
       category: 'Front-end Development',
@@ -24,7 +44,7 @@ export default function AchievementWall({ isDark, openModal }) {
       size: 'medium'
     },
     {
-      id: 'wall-3',
+      id: 'wall-5',
       title: 'TalentGro Global Internship Certificate',
       type: '💼 Internship',
       category: 'Web Design & Development',
@@ -34,13 +54,23 @@ export default function AchievementWall({ isDark, openModal }) {
       size: 'medium'
     },
     {
-      id: 'wall-4',
-      title: 'HackForge 2.0 Team Collaboration',
-      type: '🚀 Hackathon',
-      category: 'Team Event',
+      id: 'wall-6',
+      title: 'Tech Fest YUGANTRAN 2.0 Certificate of Participation',
+      type: '📜 Certificate',
+      category: 'Tech Fest',
+      organization: 'Geeta University School of CSE',
+      image: '/assets/yugantran-certificate.png',
+      caption: 'Certificate of Achievement for participation in Tech Fest Yugantran 2.0.',
+      size: 'medium'
+    },
+    {
+      id: 'wall-7',
+      title: 'HackForge 2.0 Stage Presentation & Pitch',
+      type: '🏆 Achievement',
+      category: 'Auditorium Pitching',
       organization: 'Geeta University',
-      image: '/assets/team-photo.jpg',
-      caption: 'Ayush Kumar and team members participating in HackForge 2.0.',
+      image: '/assets/hackforge-stage.png',
+      caption: 'Ayush presenting project analytics on auditorium stage during HackForge 2.0 finals.',
       size: 'large'
     }
   ];
@@ -80,7 +110,7 @@ export default function AchievementWall({ isDark, openModal }) {
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/40 to-transparent opacity-90 group-hover:opacity-95 transition-opacity" />
                   

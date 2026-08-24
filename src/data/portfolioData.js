@@ -38,7 +38,7 @@ export const portfolioData = {
       },
       {
         title: "Leadership & Teamwork",
-        desc: "Coordinating hackathon teams, organizing tasks, and fostering seamless collaboration.",
+        desc: "Coordinating hackathon teams (Team 'Hack Titans'), organizing tasks, and fostering seamless collaboration.",
         icon: "Users"
       },
       {
@@ -52,15 +52,18 @@ export const portfolioData = {
   achievements: [
     {
       id: "hackforge-2026",
-      title: "Top 15 — HackForge 2.0",
-      badge: "Top 15 Team",
-      organization: "Geeta University",
-      description: "Achieved a Top 15 position in HackForge 2.0 through project development, rapid prototyping, and high-impact stage team presentation.",
+      title: "Top 15 — HackForge 2.0 (Team Hack Titans)",
+      badge: "Top 15 Teams Awardee",
+      organization: "Geeta University & Geeta Technical Hub",
+      description: "Secured a place among the Top 15 Teams out of all participants in the prestigious 'HackForge 2.0' 24-Hour Internal Students Hackathon (14th-15th April 2026) with Team 'Hack Titans'. Received official Certificate of Appreciation.",
+      certificateImage: "/assets/hackforge-certificate.jpg",
       images: [
+        { url: "/assets/hackforge-certificate.jpg", caption: "Official Certificate of Appreciation - Top 15 Teams in HackForge 2.0 awarded to Ayush Kumar (Team Hack Titans)." },
+        { url: "/assets/hackforge-id-cards.png", caption: "Official HackForge 2.0 Participant ID Cards for Team 'Hack Titans' (Ayush, Abhay, Aaditya, Krishna)." },
         { url: "/assets/hackforge-stage.png", caption: "Ayush presenting project analytics on stage during HackForge 2.0 auditorium pitching round." },
         { url: "/assets/team-photo.jpg", caption: "Ayush Kumar and team members during the HackForge 2.0 hackathon event." }
       ],
-      highlights: ["Auditorium Stage Presentation", "Project Development", "Team Collaboration"]
+      highlights: ["Top 15 Teams Official Certificate", "Team 'Hack Titans' Lead", "Auditorium Stage Presentation", "24-Hour Hackathon Execution"]
     },
     {
       id: "oosc-4",
@@ -71,6 +74,15 @@ export const portfolioData = {
       github: "https://github.com/ayush77177panjiyar-star/Civil_AI",
       liveDemo: "https://civil-ai-rax3.onrender.com/",
       highlights: ["First Elimination Round Project", "Gemini 2.5 AI Integration", "RTI & Statutory Guidance"]
+    },
+    {
+      id: "yugantran-2026",
+      title: "Tech Fest YUGANTRAN 2.0 Participation",
+      badge: "Certificate of Achievement",
+      organization: "Geeta University (School of CSE & Geeta Technical Hub)",
+      description: "Awarded Certificate of Achievement for valuable participation in Tech Fest Yugantran 2.0 organized by School of Computer Science & Engineering.",
+      certificateImage: "/assets/yugantran-certificate.png",
+      highlights: ["Geeta University Tech Fest", "School of CSE Competition", "Technical Innovation Showcase"]
     }
   ],
 
@@ -152,9 +164,10 @@ export const portfolioData = {
       issuedDate: "17/03/2026",
       internId: "SKS/A2/C101286",
       accreditation: "ISO 9001:2015 Certified | MSME Registered",
-      description: "Served as Front-end Development Intern. Displayed remarkable dedication, attention to detail, and built user-centric frontend interfaces using modern web standards.",
+      description: "Served as Front-end Development Intern. Worked on creative frontend solutions, building user-centric interfaces and responsive web layouts using modern technologies.",
       skills: ["Front-end Development", "HTML5", "CSS3", "JavaScript", "Communication", "Attention to Detail"],
-      certificateImage: "/assets/saiket-certificate.png"
+      certificateImage: "/assets/saiket-certificate.png",
+      offerLetterImage: "/assets/saiket-offer-letter.png"
     },
     {
       id: "talentgro-global",
@@ -170,10 +183,41 @@ export const portfolioData = {
       description: "Successfully carried out internship in Web Design and Development. Designed responsive layouts, implemented dynamic features, and worked on real-world web assignments.",
       skills: ["Web Design", "Web Development", "UI/UX Layouts", "Responsive Design", "Teamwork"],
       certificateImage: "/assets/talentgro-certificate.png"
+    },
+    {
+      id: "codsoft",
+      organization: "CodSoft",
+      tagline: "Code. Create. Succeed.",
+      role: "C++ Programming Virtual Intern",
+      duration: "01 March 2026 to 31 March 2026",
+      issuedDate: "27/02/2026",
+      internId: "BY25RY271995",
+      accreditation: "ISO 9001:2015 Certified | MSME Registered",
+      description: "Selected for 1-Month C++ Programming Virtual Internship. Focused on core C++ algorithm execution, data structures, and practical software assignments.",
+      skills: ["C++ Programming", "Data Structures", "Algorithm Logic", "Problem Solving"],
+      certificateImage: "/assets/codsoft-offer-letter.png"
     }
   ],
 
   certifications: [
+    {
+      id: "cert-hackforge-top15",
+      title: "HackForge 2.0 Top 15 Certificate of Appreciation",
+      organization: "Geeta University & Geeta Technical Hub",
+      category: "Hackathon",
+      date: "14-15 April 2026",
+      credentialId: "Top 15 Teams - Team Hack Titans",
+      image: "/assets/hackforge-certificate.jpg"
+    },
+    {
+      id: "cert-hackforge-cards",
+      title: "HackForge 2.0 Participant ID Cards (Team Hack Titans)",
+      organization: "Geeta University",
+      category: "Hackathon",
+      date: "14-15 April 2026",
+      credentialId: "Team Hack Titans ID Cards",
+      image: "/assets/hackforge-id-cards.png"
+    },
     {
       id: "cert-saiket",
       title: "Front-end Development Internship Certificate",
@@ -182,6 +226,15 @@ export const portfolioData = {
       date: "17/03/2026",
       credentialId: "SKS/A2/C101286",
       image: "/assets/saiket-certificate.png"
+    },
+    {
+      id: "cert-saiket-offer",
+      title: "Front-End Development Internship Offer Letter",
+      organization: "Saiket Systems",
+      category: "Internship",
+      date: "14/02/2026",
+      credentialId: "SKS/A2/C101286",
+      image: "/assets/saiket-offer-letter.png"
     },
     {
       id: "cert-talentgro",
@@ -193,12 +246,30 @@ export const portfolioData = {
       image: "/assets/talentgro-certificate.png"
     },
     {
-      id: "cert-hackforge",
-      title: "HackForge 2.0 Top 15 Achievement & Presentation",
+      id: "cert-codsoft-offer",
+      title: "C++ Programming Internship Offer Letter",
+      organization: "CodSoft",
+      category: "Internship",
+      date: "27/02/2026",
+      credentialId: "BY25RY271995",
+      image: "/assets/codsoft-offer-letter.png"
+    },
+    {
+      id: "cert-yugantran",
+      title: "Tech Fest YUGANTRAN 2.0 Certificate of Participation",
+      organization: "Geeta University (School of CSE)",
+      category: "Technical",
+      date: "2026",
+      credentialId: "Yugantran 2.0 Participation",
+      image: "/assets/yugantran-certificate.png"
+    },
+    {
+      id: "cert-hackforge-pitch",
+      title: "HackForge 2.0 Auditorium Stage Pitching",
       organization: "Geeta University",
       category: "Hackathon",
       date: "2026",
-      credentialId: "HackForge 2.0 Top 15",
+      credentialId: "Auditorium Stage Presentation",
       image: "/assets/hackforge-stage.png"
     }
   ],
@@ -247,14 +318,14 @@ export const portfolioData = {
     {
       step: 5,
       title: "Professional Internships",
-      organizations: ["Saiket Systems", "TalentGro Global"],
-      description: "Completed industry internships in Front-end Development and Web Design & Development."
+      organizations: ["Saiket Systems", "TalentGro Global", "CodSoft"],
+      description: "Completed industry internships in Front-end Development, Web Design & Development, and C++ Programming."
     },
     {
       step: 6,
       title: "Hackathons & Achievements",
-      events: ["HackForge 2.0 (Top 15)", "OOSC 4.0 IIIT Allahabad"],
-      description: "Competed in high-stakes hackathons, pitched on auditorium stages, and developed AI-driven tools."
+      events: ["HackForge 2.0 (Top 15 - Team Hack Titans)", "OOSC 4.0 IIIT Allahabad", "Yugantran 2.0 Tech Fest"],
+      description: "Competed in high-stakes hackathons, pitched on auditorium stages, and earned official certificates of appreciation."
     }
   ]
 };
