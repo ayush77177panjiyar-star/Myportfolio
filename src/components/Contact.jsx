@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, Github, Linkedin, Send, MapPin, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
-import { supabase } from '../lib/supabase';
+import { supabase, isSupabaseConfigured } from '../lib/supabase';
 
 export default function Contact({ isDark }) {
   const { personal } = portfolioData;
@@ -51,6 +51,12 @@ export default function Contact({ isDark }) {
 
     // Validate inputs
     if (!validateForm()) {
+      return;
+    }
+
+    // Check if Supabase keys are configured
+    if (!isSupabaseConfigured) {
+      setSubmitError("Supabase configuration is missing. Please configure VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY in your environment settings.");
       return;
     }
 
