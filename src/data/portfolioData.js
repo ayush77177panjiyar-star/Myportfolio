@@ -11,7 +11,7 @@ export const portfolioData = {
     linkedin: "https://www.linkedin.com/in/ayush-kumar-paniyar/",
     email: "ayush77177panjiyar@gmail.com",
     phone: "+91 7903382446",
-    location: "Samastipur, Bihar | Geeta University, Panipat"
+    location: "Gurugram, Haryana | Geeta University, Panipat"
   },
   
   about: {
