@@ -74,12 +74,26 @@ export default function Contact({ isDark }) {
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
               <a
-                href={`mailto:${personal.email}`}
-                className="px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-500 text-white font-bold text-sm sm:text-base shadow-lg shadow-indigo-600/30 hover:scale-[1.02] hover:shadow-indigo-600/40 transition-all duration-200 flex items-center gap-2.5"
+                href={`https://mail.google.com/mail/?view=cm&fs=1&to=${personal.email}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-7 py-4 rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-500 text-white font-bold text-sm sm:text-base shadow-lg shadow-indigo-600/30 hover:scale-[1.02] hover:shadow-indigo-600/40 transition-all duration-200 flex items-center gap-2.5"
               >
                 <Mail className="w-5 h-5" />
-                <span>Email Me</span>
+                <span>Compose in Gmail</span>
                 <ExternalLink className="w-4 h-4 opacity-75" />
+              </a>
+
+              <a
+                href={`mailto:${personal.email}`}
+                className={`px-6 py-4 rounded-xl font-bold text-sm sm:text-base border transition-all duration-200 flex items-center gap-2 hover:scale-[1.02] ${
+                  isDark
+                    ? 'bg-gray-800/80 border-gray-700 text-gray-200 hover:bg-gray-700/80'
+                    : 'bg-white border-gray-300 text-slate-800 hover:bg-gray-50 shadow-sm'
+                }`}
+              >
+                <Mail className="w-4 h-4 text-indigo-400" />
+                <span>Mail App</span>
               </a>
 
               <button
@@ -96,7 +110,7 @@ export default function Contact({ isDark }) {
                 {copied ? (
                   <>
                     <Check className="w-5 h-5 text-emerald-400 animate-fadeIn" />
-                    <span className="text-emerald-400">Copied to Clipboard!</span>
+                    <span className="text-emerald-400">Copied!</span>
                   </>
                 ) : (
                   <>
