@@ -115,7 +115,7 @@ export default function Navbar({ isDark, toggleTheme }) {
               href="#contact"
               className="px-4 py-2 text-xs font-semibold rounded-xl bg-indigo-600 text-white hover:bg-indigo-500 shadow-md shadow-indigo-600/30 transition-all duration-200 hover:scale-[1.02]"
             >
-              Hire Me
+              Get In Touch
             </a>
           </div>
 

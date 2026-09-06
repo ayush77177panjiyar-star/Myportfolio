@@ -55,7 +55,7 @@ export default function Contact({ isDark }) {
                 Send Me a Direct Email
               </h3>
               <p className={`text-sm sm:text-base ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                Whether you're looking to hire for full-time roles, software internships, freelance projects, or just want to say hi, my inbox is always open.
+                Whether you have project opportunities, software internships, freelance work, or just want to say hi, my inbox is always open.
               </p>
             </div>
 
